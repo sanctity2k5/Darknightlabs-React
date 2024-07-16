@@ -4,6 +4,7 @@ import infoCircle from "../../assets/info-circle.png"
 import addIcon from "../../assets/add-icon.png"
 import arrowDown from "../../assets/arrow-down.png"
 import './select.scss'
+import { useClickOutside } from '../../utils/hooks/useClickOutside';
 
 const Select = ({
     value,
@@ -16,6 +17,9 @@ const Select = ({
 }) => {
     const [currentOption, setcurrentOption] = useState(null)
     const [isOpen, setIsOpen] = useState(false)
+    const listRef = useClickOutside(() => {
+        setIsOpen(false)
+    })
     const optionData = options?.find((item) => item.value === currentOption)
 
     const handleClickLabel = () => {
@@ -32,8 +36,11 @@ const Select = ({
         setcurrentOption(value)
     }, [value])
 
+
     return (
-        <div className="select_wrapper">
+        <div
+            className="select_wrapper"
+        >
             <div
                 className="custom_select_field"
                 onClick={handleClickLabel}
@@ -45,7 +52,10 @@ const Select = ({
                     <img src={arrowDown} alt="" />
                 </div>
             </div>
-            <div className={`custom_select_list ${isOpen ? 'active' : ''}`}>
+            <div
+                className={`custom_select_list ${isOpen ? 'active' : ''}`}
+                ref={listRef}
+            >
                 <ul>
                     {
                         options.map((opt) => {

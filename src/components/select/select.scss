@@ -16,6 +16,11 @@
         margin-bottom: 8px;
         position: relative;
 
+        @media (max-width: 1600px) {
+            font-size: 14px;
+            padding: 10px 20px;
+        }
+
         .custom_select_label {
             color: #f5efdb;
         }
@@ -27,7 +32,17 @@
         .down-arrow {
             position: absolute;
             right: 13px;
-            top: 13px;
+            top: 20%;
+
+            img {
+                height: 24px;
+                width: 24px;
+
+                @media (max-width: 1600px) {
+                    height: 20px;
+                    width: 20px;
+                }
+            }
         }
     }
 
@@ -42,10 +57,10 @@
 
         &.active {
             display: block;
+            z-index: 10;
         }
 
         ul {
-            margin-bottom: 5px;
 
             li {
                 display: flex;
@@ -57,8 +72,12 @@
                 line-height: 19.36px;
                 color: #f5efdb;
 
+                @media (max-width: 1600px) {
+                    font-size: 14px;
+                }
+
                 &:hover {
-                    background-color: #FFFFFF1A;
+                    background-color: #ffffff1a;
                 }
             }
         }
@@ -75,6 +94,11 @@
             justify-content: center;
             gap: 5px;
             width: 100%;
+            margin-top: 8px;
+
+            @media (max-width: 1600px) {
+                font-size: 14px;
+            }
         }
     }
 }
