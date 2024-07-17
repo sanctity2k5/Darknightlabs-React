@@ -1,0 +1,104 @@
+.select_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+
+    .custom_select_field {
+        padding: 16px 24px;
+        border: 1px solid rgba(255, 255, 255, 0.5019607843);
+        background-color: transparent;
+        width: 100%;
+        line-height: 19.36px;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 8px;
+        position: relative;
+
+        @media (max-width: 1600px) {
+            font-size: 14px;
+            padding: 10px 20px;
+        }
+
+        .custom_select_label {
+            color: #f5efdb;
+        }
+
+        .custom_select_placeholder {
+            color: #F5EFDB80;
+        }
+
+        .down-arrow {
+            position: absolute;
+            right: 13px;
+            top: 20%;
+
+            img {
+                height: 24px;
+                width: 24px;
+
+                @media (max-width: 1600px) {
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+        }
+    }
+
+    .custom_select_list {
+        border: 1px solid #ffffff80;
+        background-color: #242623;
+        padding: 10px;
+        position: absolute;
+        display: none;
+        width: 100%;
+        top: calc(100% + 0px);
+
+        &.active {
+            display: block;
+            z-index: 10;
+        }
+
+        ul {
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                padding: 10px 16px;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 19.36px;
+                color: #f5efdb;
+
+                @media (max-width: 1600px) {
+                    font-size: 14px;
+                }
+
+                &:hover {
+                    background-color: #ffffff1a;
+                }
+            }
+        }
+
+        .add_new_angle_btn {
+            padding: 10px 24px;
+            border: none;
+            background-color: rgba(78, 78, 78, 0.5803921569);
+            font-size: 16px;
+            font-weight: 500;
+            color: #f5efdb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            width: 100%;
+            margin-top: 8px;
+
+            @media (max-width: 1600px) {
+                font-size: 14px;
+            }
+        }
+    }
+}
