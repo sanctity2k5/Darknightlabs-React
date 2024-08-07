@@ -4,6 +4,8 @@ import { ROUTER } from './utils/routes/routes'
 import './App.scss'
 import Layout from './components/layout/Layout'
 import Synergies from "./pages/synergies/Synergies";
+import Login from './pages/login/Login'
+import ForgotPassword from './pages/forgotPassword/forgotPassword';
 
 function App() {
 
@@ -13,6 +15,9 @@ function App() {
         <Routes>
           <Route path={'/'} element={<Navigate to={ROUTER.projectManager} />} />
           <Route exact path="/synergies" element={<Synergies />} />
+          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/forgot-password" element={<ForgotPassword />} />
+          
 
           <Route element={<Layout />}>
             <Route path={ROUTER.projectManager} element={<ProjectManager />} />

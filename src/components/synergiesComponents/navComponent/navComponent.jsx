@@ -1,5 +1,3 @@
-// src/components/synergiesComponents/navComponent.js
-import React from "react";
 import menuIcon from "../../../assets/icons/menu-icons.png";
 import styles from "./navComponent.module.css";
 

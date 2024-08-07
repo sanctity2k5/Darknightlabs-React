@@ -1,0 +1,70 @@
+.loginPopupContainer {
+  @apply m-0 p-0 px-4 pt-10 relative z-10 xl:w-[600px] xl:h-[570px] xl:px-[42px];
+}
+
+.shadowFrameTop {
+  @apply absolute -mt-7 -ml-3 w-[220px] h-[158px] xl:w-[381px] xl:h-[319px] xl:-ml-8;
+}
+
+.header {
+  @apply flex items-center justify-between text-[#F5EFDB];
+}
+
+.title {
+  @apply font-medieval text-[32px] font-medium;
+}
+
+.form {
+  @apply mt-6 text-[#F5EFDB] font-medieval;
+}
+
+.field {
+  @apply flex flex-col gap-2 mt-8;
+}
+
+.label {
+  @apply font-medium;
+}
+
+.input {
+  @apply p-2 border border-white opacity-50 w-full h-[50px] bg-transparent px-[24px] outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.rememberMe {
+  @apply flex items-center justify-between mt-4;
+}
+
+.checkboxContainer {
+  @apply flex gap-1.5;
+}
+
+.checkbox {
+  @apply h-6 w-6 appearance-none border border-gray-300 rounded-sm checked:bg-blue-600 checked:border-transparent focus:outline-none;
+}
+
+.forgotPassword {
+  @apply text-[#FFDF76] font-medieval;
+}
+
+.loginButton {
+  @apply w-full h-[50px] bg-[#4E4E4E] opacity-[58%] text-white py-2 mt-8 border-none cursor-pointer hover:opacity-100;
+}
+
+.iconsContainer {
+  @apply flex gap-[29px] w-full items-center justify-center mt-8;
+}
+
+.icons {
+  @apply w-8 h-8;
+}
+
+.gradientBorder {
+  border: 0.67px solid transparent;
+  border-image: linear-gradient(to left, #463600, #F5EFDB00);
+  border-image-slice: 1;
+  width: 163px;
+}
+
+.cta {
+  @apply text-[#FFFFFF] text-[16px] font-medieval font-medium leading-[18px];
+}

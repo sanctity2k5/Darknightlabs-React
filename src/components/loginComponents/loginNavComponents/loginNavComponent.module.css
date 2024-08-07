@@ -1,0 +1,27 @@
+.navContainer {
+    @apply xl:h-[100px] bg-[#242623];
+  }
+
+  .navWrapper {
+    @apply flex justify-between items-center leading-[27px] bg-[#090A0B] p-6 xl:h-[100px];
+  }
+
+  .navTitle {
+    @apply text-[#F5EFDB] font-medieval font-medium text-[24px];
+  }
+
+  .navLinks {
+    @apply hidden xl:flex items-center gap-8;
+  }
+
+  .navLink {
+    @apply  py-2 text-[#F5EFDB] font-medieval;
+  }
+
+  .button {
+    @apply hidden xl:block border border-[#F5EFDB] px-4 py-1 text-[#F5EFDB] text-[16px] font-medieval w-[110px] h-[36px];
+  }
+
+  .menuIcon {
+    @apply text-white w-6 h-6 xl:hidden;
+  }

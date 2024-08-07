@@ -1,0 +1,11 @@
+.container {
+    @apply h-[94px] flex flex-col items-center text-white bg-[#141414] py-[15px] xl:hidden;
+}
+
+.icon {
+    @apply w-[22.38px] h-[22.38px];
+}
+
+.reserved {
+    @apply mt-[14px] text-[#F5EFDB] text-[16px] font-medieval font-medium;
+}
