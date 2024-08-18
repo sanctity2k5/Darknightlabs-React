@@ -15,7 +15,7 @@ function Synergies() {
         <div className={styles.midContainer}>
           <SideBar />
           <div className="xl:w-[1280px]">
-            <SearchComponent tabName={"Synergies"} />
+            <SearchComponent tabName={"Synergies"} icon={true} />
             <img
               src={shadowFrameTop}
               className="absolute top-[230px] ml-[8px]"

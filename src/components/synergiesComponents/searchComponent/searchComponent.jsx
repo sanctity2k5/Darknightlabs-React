@@ -3,7 +3,7 @@ import searchIcon from "../../../assets/icons/search.png";
 import styles from "./searchComponent.module.css";
 
 // eslint-disable-next-line react/prop-types
-function SearchComponent({ tabName }) {
+function SearchComponent({ tabName, icon }) {
   return (
     <div className={styles.searchContainer}>
       <div className="flex items-center gap-8">
@@ -18,7 +18,7 @@ function SearchComponent({ tabName }) {
         </div>
       </div>
       <h1 className={styles.tabNameMobile}>Darknight Labs</h1>
-      <img src={searchIcon} alt="menu" className={styles.searchIconMobile} />
+      {icon && <img src={searchIcon} alt="menu" className={styles.searchIconMobile} />}
     </div>
   );
 }
